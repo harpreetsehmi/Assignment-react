@@ -1,0 +1,25 @@
+@mixin nav-text{
+   font-family: 'Inter', sans-serif;
+   font-weight: 800;
+   padding-right: 80px !important;
+   color: $nav-text;
+   font-size: 18px !important;
+}
+@mixin button{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 800; 
+    border-radius: 25px;
+    background-color: $button-color;
+    border-color: $button-color;
+}
+@mixin fontfamily{
+    font-family: 'Inter', sans-serif;
+}
+@mixin box-margin {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+@mixin fontfamily2{
+    font-family: 'arial';
+}

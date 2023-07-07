@@ -1,0 +1,126 @@
+@import '../Styles/variable.scss';
+@import '../Styles/mixins.scss';
+.form-wrap {
+    max-width: 1226px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    background-image: url('../../assets/family.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  padding-top: 48px;
+    padding-left: 62px;
+    padding-bottom: 41px;
+    box-shadow: 0px 0px 20px #00000029;
+    border-radius: 15px;
+    .heading {
+        h3 {
+            @include fontfamily;
+            font-size: 30px;
+            font-weight: 800;
+            color: $banner-text;
+            span{
+                color: $button-color;
+            }
+        }
+    }
+    .secure-info {
+        background-color: #F4136B27;
+        width: 323px;
+        height: 41px;
+        border-radius: 8px;
+        margin-top: 13px;
+        font-size: 14px;
+        color: $secondary-color;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    
+        img {
+            max-width: 20px;
+            margin-right: 5px
+        }
+    }
+    .butn-quotes{
+       button{
+        background-color: $button-color;
+        color: #fff;
+        border-radius: 30px;
+        height: 43px;
+        border: 0;
+        padding: 0 23px;
+        font-weight: 800;
+       }
+    }
+    .bottom-line {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            @include fontfamily2;
+            span{
+                color: $secondary-color;
+            }
+        }
+    }
+}
+.outer-wrap{
+    
+    background-color: #F9FAFF;
+    text-align: left;
+    padding: 115px 0;
+    .form-inputs {
+        
+        .datep{
+            padding: 0 14px;
+           &::before{
+            content: url('../../assets/uil_calender.svg');
+            position:relative; /*or absolute*/
+            z-index:100000; 
+            left:-50px;
+            top:10px;
+           }
+        }
+        form {
+            .selected{
+                background-color: $button-color !important;
+                color: #fff !important;
+            }
+            .react-datepicker-wrapper{
+                width: 100%;
+                .react-datepicker__input-container{
+                    width: 100%;
+                }
+            }
+           
+            .form-label{
+                font-size: 12px;
+                font-weight: bold;
+            }
+            input {
+                border: 1px solid #1D1D1D;
+                border-radius: 9px;
+                height: 57px;
+                width: 100%;
+            }
+            text-align: left;
+            .btn-ico {
+                @include fontfamily2;
+                border-color: $button-color;
+                border-radius: 7px;
+                border: 2px solid #1E6FB0;
+                background-color: #fff;
+                color: $banner-text;
+                margin-right: 10px;
+                font-size: 18px;
+                
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
